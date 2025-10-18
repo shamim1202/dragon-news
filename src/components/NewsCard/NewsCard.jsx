@@ -18,7 +18,7 @@ const NewsCard = ({ news }) => {
   return (
     <div className="card border border-base-200 shadow-md hover:shadow-md transition duration-300 bg-base-100">
       {/* Author Info */}
-      <div className="flex items-center justify-between p-4 bg-base-300">
+      <div className="flex items-center justify-between p-4 bg-base-200">
         <div className="flex items-center gap-3">
           <img
             src={author.img}
