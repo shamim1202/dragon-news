@@ -9,7 +9,7 @@ const MainLayout = () => {
   return (
     <div className="max-w-7xl mx-auto">
       {/* ---------- Header Section ----------- */}
-      <header>
+      <header className="mt-5">
         <Header></Header>
         <section className="md:my-5">
           <LatestNews></LatestNews>
@@ -20,7 +20,7 @@ const MainLayout = () => {
       {/* ---------- Main Content Section ----------- */}
       <main className="grid grid-cols-12 md:gap-5">
         {/* ---------- Left Nav ----------- */}
-        <aside className="col-span-3">
+        <aside className="col-span-3 sticky top-5 h-fit">
           <LeftAside></LeftAside>
         </aside>
 
@@ -29,7 +29,7 @@ const MainLayout = () => {
         </section>
 
         {/* ---------- Right Nav ----------- */}
-        <aside className="col-span-3">
+        <aside className="col-span-3 sticky top-5 h-fit">
           <RightAside></RightAside>
         </aside>
       </main>

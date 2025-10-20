@@ -26,7 +26,7 @@ const CategoryNews = () => {
   return (
     <div>
       <h1 className="md:font-semibold text-accent md:py-4">
-        Dragon News Home
+        Dragon News
       </h1>
 
       <div className="grid md:grid-cols-1 md:gap-5">

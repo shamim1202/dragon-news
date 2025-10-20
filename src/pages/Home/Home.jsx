@@ -1,10 +1,11 @@
+import { Navigate } from "react-router";
 
 const Home = () => {
-    return (
-        <div className="border border-cyan-500">
-            This is home
-        </div>
-    );
+  return (
+    <div>
+      <Navigate to="/category/1"></Navigate>
+    </div>
+  );
 };
 
 export default Home;
