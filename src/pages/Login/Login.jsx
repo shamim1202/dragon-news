@@ -22,7 +22,9 @@ const Login = () => {
     })
     .catch(error => {
       const message = error.message;
-      console.log(message)
+      const code = error.code;
+      toast(code,':', message)
+      console.log(message,code)
     })
 
     form.reset();

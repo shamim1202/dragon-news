@@ -1,9 +1,18 @@
 import { FaRegEye, FaShareAlt, FaStar } from "react-icons/fa";
 import { FaRegBookmark } from "react-icons/fa6";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
-  const { title, details, author, thumbnail_url, rating, total_view, tags } =
-    news;
+  const {
+    id,
+    title,
+    details,
+    author,
+    thumbnail_url,
+    rating,
+    total_view,
+    tags,
+  } = news;
 
   // Format published date
   const publishedDate = new Date(author.published_date).toLocaleDateString(
@@ -56,11 +65,14 @@ const NewsCard = ({ news }) => {
         </figure>
 
         {/* Details (trim long text) */}
-        <p className="text-sm text-gray-600 leading-relaxed">
+        <p className="text-sm text-gray-600 leading-relaxed md:mb-8">
           {details.slice(0, 200)}...
-          <span className="text-accent font-medium cursor-pointer hover:underline ml-1">
+          <Link
+            to={`/news_details/${id}`}
+            className="text-accent font-medium cursor-pointer hover:underline ml-1"
+          >
             Read More
-          </span>
+          </Link>
         </p>
 
         {/* Tags */}
