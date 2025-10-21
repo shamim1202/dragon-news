@@ -15,7 +15,7 @@ const NewsDetailsCard = ({ news }) => {
       <h1 className="md:text-2xl font-semibold text-accent">{title}</h1>
       <p className="text-xs md:text-base text-info md:leading-7">{details}</p>
       <Link className="btn btn-secondary" to={`/category/${category_id}`}>
-        <FaArrowLeft /> All news in this category
+        <FaArrowLeft /> Back to category
       </Link>
     </div>
   );
